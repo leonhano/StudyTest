@@ -1,4 +1,0 @@
-[submodule "angular-mkw-project"]
-	path = angular-mkw-project
-	url = https://github.com/leonhano/angular-mkw-project.git
-	branch = master
