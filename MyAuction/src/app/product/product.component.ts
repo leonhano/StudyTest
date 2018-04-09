@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductComponent implements OnInit {
 
   private products: Array<Product>;
+  private imgUrl = 'http://placehold.it/320x150';
 
   constructor() { }
 
@@ -19,7 +20,7 @@ export class ProductComponent implements OnInit {
       new Product(4, '4th item', 5.49, 2.5, '4th item!', ['Hardware']),
       new Product(5, '5th item', 6.88, 4.5, '5th item!', ['other']),
       new Product(6, '6th item', 3.45, 3.0, '6th item!', ['Food', 'Cookie']),
-      new Product(7, '7th item', 2.00, 1.5, 'fir7thst item!', ['Food', 'Seafood']),
+      new Product(7, '7th item', 2.00, 2.5, 'fir7thst item!', ['Food', 'Seafood']),
     ];
 
     this.products.push(new Product(8, '8th item', 4.33, 5.0, '4th item!', ['Tablet']));
