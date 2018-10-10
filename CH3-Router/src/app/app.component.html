@@ -1,4 +1,14 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+
+<a [routerLink]="['/home']">Home</a>
+<a [routerLink]="['/product', 100]"  >Production</a>
+<input type="button" value="Prod details" (click)="toProductionDetails()">
+
+
+
+
+<a [routerLink]="[{outlets: {aux: 'chat'}}]">chat</a>
+<a [routerLink]="[{outlets: {aux: null}}]"  >close chat</a>
+
+<hr> 
+<router-outlet></router-outlet> 
+<router-outlet name="aux"></router-outlet> 

@@ -1,0 +1,17 @@
+<div class="product">
+<p>
+  product Component
+</p>
+
+<p>
+  Prod id =  {{ productId }}
+</p>
+<p>
+  Prod name =  {{ productName }}
+</p>
+<a [routerLink]="['./']">Description</a>
+<a [routerLink]="['./seller', 99]">Seller Info</a>
+<router-outlet></router-outlet>
+
+<hr>
+</div>
