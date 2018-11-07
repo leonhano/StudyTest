@@ -32,6 +32,10 @@
 npm-debug.log
 testem.log
 /typings
+<<<<<<< HEAD
+=======
+yarn-error.log
+>>>>>>> origin/develop
 
 # e2e
 /e2e/*.js
@@ -40,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
+=======
+MyAuction/node_modules/
+>>>>>>> origin/develop
