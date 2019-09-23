@@ -7,6 +7,9 @@ export class LoginGuard implements CanActivate {
         if(!loggedIn) {
             console.log('not loged in');
         }
+        else {
+            console.log('log in.....');
+        }
         return loggedIn;
     } 
 }

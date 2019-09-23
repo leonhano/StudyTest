@@ -19,13 +19,15 @@ const routes: Routes = [
     children: [
       {path: '', component: XxxComponentComponent},
       {path: 'yyy', component: YyyComponentComponent}
-    ]
+    ],
+    
   },
   { path: 'product/:id', component: ProductComponent,
     children: [
       {path: '', component: ProductDescComponent},
       {path: 'seller/:id', component: SellerInfoComponent}
     ],
+    canActivate:[LoginGuard],
     resolve: {
       product: ProductResolve
     }
